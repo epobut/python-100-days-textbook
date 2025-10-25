@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День 1: Введение в Python - Учебник Python 100 дней</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin: 0 5px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #f4f4f4;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .comment {
+            color: #27ae60;
+        }
+        .test-section {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .question {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: white;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 3px;
+            display: none;
+        }
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Python 100 дней - День 1</h1>
+        <p>Введение в Python: Основы программирования</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Главная</a>
+        <a href="day01.html" style="background-color: #2c3e50;">День 1</a>
+        <a href="day02.html">День 2 →</a>
+    </nav>
+
+    <div class="content">
+        <h2>🎯 Цели дня 1</h2>
+        <ul>
+            <li>Понять, что такое Python и зачем он нужен</li>
+            <li>Научиться выводить текст на экран</li>
+            <li>Познакомиться с переменными</li>
+            <li>Создать первую программу на Python</li>
+        </ul>
+
+        <h2>📖 Что такое Python?</h2>
+        <p>Python - это высокоуровневый язык программирования, который легко читается и пишется. Он был создан Гвидо ван Россумом в 1991 году и назван в честь комедийной группы "Monty Python".</p>
+        
+        <h3>Преимущества Python:</h3>
+        <ul>
+            <li><strong>Простой синтаксис:</strong> Python читается почти как английский язык</li>
+            <li><strong>Универсальность:</strong> Подходит для веб-разработки, анализа данных, AI, автоматизации</li>
+            <li><strong>Большое сообщество:</strong> Множество библиотек и помощи от других разработчиков</li>
+            <li><strong>Востребованность:</strong> Один из самых популярных языков программирования в мире</li>
+        </ul>
+
+        <h2>💻 Ваша первая программа</h2>
+        <p>Традиционно, первая программа на любом языке программирования - это "Hello, World!". Давайте её напишем:</p>
+        
+        <div class="code-block">
+<span class="comment"># Это комментарий - Python игнорирует эту строку</span>
+<span class="comment"># Функция print() выводит текст на экран</span>
+print("Hello, World!")
+        </div>
+
+        <h3>Пример с переменными:</h3>
+        <div class="code-block">
+<span class="comment"># Создаём переменную с вашим именем</span>
+name = "Иван"
+
+<span class="comment"># Создаём переменную с возрастом</span>
+age = 25
+
+<span class="comment"># Выводим приветствие с использованием переменных</span>
+print("Привет! Меня зовут", name)
+print("Мне", age, "лет")
+
+<span class="comment"># Можно использовать f-строки для более удобного форматирования</span>
+print(f"Привет! Меня зовут {name} и мне {age} лет")
+        </div>
+
+        <h2>🔍 Основные понятия</h2>
+        
+        <h3>1. Комментарии</h3>
+        <p>Комментарии помогают объяснить код. Python игнорирует текст после символа #:</p>
+        <div class="code-block">
+<span class="comment"># Это однострочный комментарий</span>
+print("Привет")  <span class="comment"># Комментарий может быть и после кода</span>
+        </div>
+
+        <h3>2. Переменные</h3>
+        <p>Переменные - это контейнеры для хранения данных. В Python не нужно объявлять тип переменной:</p>
+        <div class="code-block">
+<span class="comment"># Строка (текст)</span>
+greeting = "Привет, мир!"
+
+<span class="comment"># Целое число</span>
+count = 42
+
+<span class="comment"># Число с плавающей точкой</span>
+price = 19.99
+
+<span class="comment"># Булево значение (True/False)</span>
+is_student = True
+        </div>
+
+        <h3>3. Функция print()</h3>
+        <p>Функция print() выводит информацию на экран:</p>
+        <div class="code-block">
+<span class="comment"># Вывод текста</span>
+print("Добро пожаловать в Python!")
+
+<span class="comment"># Вывод нескольких значений</span>
+print("Я изучаю", "Python", "уже", 1, "день")
+
+<span class="comment"># Вывод с разделителем</span>
+print("Python", "JavaScript", "Java", sep=" | ")
+        </div>
+
+        <h2>✏️ Практическое задание</h2>
+        <p>Создайте программу, которая:</p>
+        <ol>
+            <li>Сохраняет ваше имя в переменную</li>
+            <li>Сохраняет ваш любимый язык программирования в другую переменную</li>
+            <li>Выводит сообщение: "Меня зовут [имя] и я изучаю [язык]!"</li>
+        </ol>
+
+        <div class="code-block">
+<span class="comment"># Ваш код здесь:</span>
+my_name = "Ваше_Имя"
+favorite_language = "Python"
+print(f"Меня зовут {my_name} и я изучаю {favorite_language}!")
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🧪 Тест: Проверьте свои знания</h2>
+        
+        <div class="question">
+            <p><strong>Вопрос 1:</strong> Какая функция используется для вывода текста на экран в Python?</p>
+            <label><input type="radio" name="q1" value="a"> a) echo()</label><br>
+            <label><input type="radio" name="q1" value="b"> b) print()</label><br>
+            <label><input type="radio" name="q1" value="c"> c) display()</label><br>
+            <label><input type="radio" name="q1" value="d"> d) show()</label>
+        </div>
+
+        <div class="question">
+            <p><strong>Вопрос 2:</strong> Какой символ используется для создания комментария в Python?</p>
+            <label><input type="radio" name="q2" value="a"> a) //</label><br>
+            <label><input type="radio" name="q2" value="b"> b) #</label><br>
+            <label><input type="radio" name="q2" value="c"> c) /*</label><br>
+            <label><input type="radio" name="q2" value="d"> d) --</label>
+        </div>
+
+        <div class="question">
+            <p><strong>Вопрос 3:</strong> Что выведет код: print("Привет", "мир", sep="-")</p>
+            <label><input type="radio" name="q3" value="a"> a) Привет мир</label><br>
+            <label><input type="radio" name="q3" value="b"> b) Привет-мир</label><br>
+            <label><input type="radio" name="q3" value="c"> c) Приветмир</label><br>
+            <label><input type="radio" name="q3" value="d"> d) Ошибка</label>
+        </div>
+
+        <button onclick="checkAnswers()">Проверить ответы</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <nav style="margin-top: 20px;">
+        <a href="../index.html">🏠 Главная</a>
+        <a href="day01.html" style="background-color: #2c3e50;">День 1</a>
+        <a href="day02.html">День 2 →</a>
+    </nav>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'b',  // print()
+                q2: 'b',  // #
+                q3: 'b'   // Привет-мир
+            };
+            
+            let score = 0;
+            let total = Object.keys(answers).length;
+            
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            }
+            
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            
+            if (score === total) {
+                resultDiv.className = 'result correct';
+                resultDiv.innerHTML = `🎉 Отлично! Вы ответили правильно на все ${total} вопроса!`;
+            } else {
+                resultDiv.className = 'result incorrect';
+                resultDiv.innerHTML = `Вы ответили правильно на ${score} из ${total} вопросов. Попробуйте ещё раз!`;
+            }
+        }
+    </script>
+</body>
+</html>
